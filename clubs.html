@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clubs | SRUniverse</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="assets/sru-logo.png" alt="SRU Logo" class="logo-img">
+        </div>
+        <ul class="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="notices.html" target="_blank">Notices</a></li>
+            <li><a href="clubs.html" target="_blank">Clubs</a></li>
+            <li><a href="forum.html">Forum</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="admin-only"><a href="#" id="manageUsersBtn">Manage Users</a></li>
+            <li><a href="#" class="navbar-login">Login</a></li>
+        </ul>
+    </nav>
+    <div class="navbar-divider"></div>
+
+    <section class="clubs-section">
+        <h2 class="clubs-title">Campus Clubs & Activities</h2>
+        <p class="clubs-subtitle">Join vibrant student communities and explore your passions beyond academics.</p>
+        <div class="admin-only" style="margin-bottom:20px; display:flex; gap:12px;">
+            <button id="addClubBtn" class="clubs-cta" style="padding:10px 18px;">Add Club</button>
+            <button id="clearClubsBtn" class="clubs-cta" style="padding:10px 18px; background:#f1f5fb; color:#123b79;">Clear Clubs</button>
+        </div>
+        <div id="clubs-grid" class="clubs-grid"></div>
+        <a href="#" id="viewAllClubsBtn" class="clubs-cta">View All Clubs →</a>
+    </section>
+    <script src="js/auth.js"></script>
+    <script src="js/clubs.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+</html>
